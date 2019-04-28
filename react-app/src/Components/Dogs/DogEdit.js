@@ -39,6 +39,11 @@ class DogEdit extends Component {
     const prevDogId = this.state.prevDogId;
     const { history } = this.props;
 
+    if (dog.info === "" || dog.name === "") {
+      alert("All fields are required!");
+      return;
+    }
+
     updateDog(prevDogId, dog).then(response => {
       console.log(response.id);
       history.push(`/dogs/${response.id}`);

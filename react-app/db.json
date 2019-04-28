@@ -36,6 +36,11 @@
       "name": "Third cat",
       "info": "Info of the third cat",
       "id": 3
+    },
+    {
+      "name": "",
+      "info": "",
+      "id": 5
     }
   ]
 }

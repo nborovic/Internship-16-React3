@@ -39,6 +39,11 @@ class CatEdit extends Component {
     const prevCatId = this.state.prevCatId;
     const { history } = this.props;
 
+    if (cat.info === "" || cat.name === "") {
+      alert("All fields are required!");
+      return;
+    }
+
     updateCat(prevCatId, cat).then(response => {
       console.log(response.id);
       history.push(`/cats/${response.id}`);

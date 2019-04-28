@@ -27,6 +27,11 @@ class CatCreate extends Component {
     const cat = this.state.cat;
     const { history } = this.props;
 
+    if (cat.info === "" || cat.name === "") {
+      alert("All fields are required!");
+      return;
+    }
+
     saveCat(cat).then(response => {
       console.log(response.id);
       history.push(`/cats/${response.id}`);

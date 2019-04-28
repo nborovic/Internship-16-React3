@@ -27,6 +27,11 @@ class DogCreate extends Component {
     const dog = this.state.dog;
     const { history } = this.props;
 
+    if (dog.info === "" || dog.name === "") {
+      alert("All fields are required!");
+      return;
+    }
+
     saveDog(dog).then(response => {
       console.log(response.id);
       history.push(`/dogs/${response.id}`);
