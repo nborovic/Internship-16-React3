@@ -1,3 +1,7 @@
+/*
+  Dog requests
+*/
+
 export const fetchDogs = () =>
   fetch("http://localhost:3000/dogs").then(res => res.json());
 
@@ -26,6 +30,10 @@ export const deleteDog = dogId =>
   fetch(`http://localhost:3000/dogs/${dogId}`, {
     method: "DELETE"
   });
+
+/*
+  Car requests
+*/
 
 export const fetchCats = () =>
   fetch("http://localhost:3000/cats").then(res => res.json());

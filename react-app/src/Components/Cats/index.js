@@ -26,7 +26,7 @@ const Cats = () => {
         path="/cats/edit/:id"
         render={props => <CatEdit {...props} />}
       />
-      <Redirect to="/cats/404" />
+      <Redirect to="/" />
     </Switch>
   );
 };

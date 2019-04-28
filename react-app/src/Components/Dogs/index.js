@@ -26,7 +26,7 @@ const Dogs = () => {
         path="/dogs/edit/:id"
         render={props => <DogEdit {...props} />}
       />
-      <Redirect to="/dogs/404" />
+      <Redirect to="/" />
     </Switch>
   );
 };
