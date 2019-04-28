@@ -1,0 +1,41 @@
+{
+  "dogs": [
+    {
+      "name": "First dog",
+      "info": "Info of the first dog",
+      "id": 1
+    },
+    {
+      "name": "Second dog",
+      "info": "Info of the second dog\n",
+      "id": 2
+    },
+    {
+      "name": "Third dog",
+      "info": "Info of the third dog",
+      "id": 3
+    },
+    {
+      "name": "Fourth dog",
+      "info": "Info of the fourth dog\n",
+      "id": 4
+    }
+  ],
+  "cats": [
+    {
+      "name": "First Cat",
+      "info": "Info of the first cat",
+      "id": 1
+    },
+    {
+      "name": "Second cat",
+      "info": "Info of the second cat",
+      "id": 2
+    },
+    {
+      "name": "Third cat",
+      "info": "Info of the third cat",
+      "id": 3
+    }
+  ]
+}
